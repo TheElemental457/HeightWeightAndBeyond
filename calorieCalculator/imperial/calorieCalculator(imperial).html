@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Calorie Calculator (Imperial)</title>
+  <link rel="stylesheet" href="calorieCalculator(imperial).css" />
+  <script src="calorieCalculator(imperial).js"></script>
+  <!-- Links to the other files of the calculator -->
+</head>
+<a href="/index.html" class="home">
+  <img id="home" src="/images/home.png" alt="" />
+</a>
+<div id="box1">
+  <h2>How to use the calculator</h2>
+  <p class="text2">
+    Simply click on the measuring system you use (imperial or metric), and enter your weight, height, age, gender,
+    activity level, and target weight loss/gain. Now you can see how many calories you should consume a day!
+  </p>
+</div>
+<div id="box2">
+  <h2>How the calculator works</h2>
+  <p class="text3">
+    This calculator works by taking in your height, weight, age, gender, your activity level (Sedentary, Lightly Active,
+    Moderately Active, Very Active, and Extremely Active), and your target weight loss/gain. If you are using the
+    imperial system, behind the scenes it converts weight and height into metric. Then it uses the following formula.
+    Boys: 66.5 + (13.75 * weight) + (5.003 * height) - (6.75 * age). Girls: 655.1 + (9.563 * weight) + (1.850 *
+    height) - (4.676 * age). Then, it multiplies the value depending on your activity level. If your activity level is
+    sedentary, the value is multiplied by 1.2. Lightly active is 1.375, moderately active is 1.55, continually active
+    is 1.725, and extra active is 1.9. It then takes how many pounds/kgs you want to lose/gain and adjusts the number of
+    calories you lose/gain by a factor of 500.
+  </p>
+</div>
+<!-- This is some info on the calculator stored in boxes and we have css attributes to these boxes -->
+<div>
+  <h2>Calorie Calculator (Imperial)</h2>
+  <a href="/calorieCalculator/metric/calorieCalculator(metric).html">Metric</a>
+  <!-- The metric switch for the calculator -->
+
+  <p class="text">Height [in]</p>
+  <input type="text" id="height" />
+  <p class="text">Weight [lb]</p>
+  <input type="text" id="weight" />
+  <p class="text">Age</p>
+  <input type="text" id="age" />
+  <p class="text">Gender</p>
+  <input type="radio" name="gender" id="Male" value="b" />Male <input type="radio" name="gender" id="Female"
+    value="g" />Female
+  <p class="text">How active are you?</p>
+  <!-- These are all of the input boxes -->
+
+  <form action="#">
+    <select name="howactive" id="active" multiple>
+      <option value="Sedentary">Sedentary(Little or No Physical Activity)</option>
+      <option value="Lightly Active">Lightly Active(Exercise 1-3 Times a Week)</option>
+      <option value="Moderately Active">Moderately Active(Exercise 4-5 times a week)</option>
+      <option value="Very Active">Very Active(Daily Exercise/Intense Exercise 4-5 Times a Week)</option>
+      <option value="Extra Active">Extra Active(Physical Job/Intense Exercise Daily)</option>
+
+      <!--- This is just a dropdown of how active you are-->
+    </select>
+  </form>
+  <p class="text">Target weight loss/gain</p>
+  <form action="#">
+    <select name="Weight Gain/Loss" id="gainLoss" multiple>
+      <option value="Extreme Weight Gain">Extreme Weight Gain(Gain 2 Pounds a Week)</option>
+      <option value="Weight Gain">Weight Gain(Gain 1 Pound a Week)</option>
+      <option value="Mid Weight Gain">Mid Weight Gain(Gain 0.5 Pounds a Week)</option>
+      <option value="Maintain Weight">Maintain Weight</option>
+      <option value="Mid Weight Loss">Mid Weight Loss (Lose 0.5 Pounds a Week)</option>
+      <option value="Weight Loss">Weight Loss(Lose 1 Pound a Week)</option>
+      <option value="Extreme Weight Loss">Extreme Weight Loss(Lose 2 Pounds a Week)</option>
+      <!-- Dropdown of how much weight you want to lose -->
+    </select>
+  </form>
+
+  <h2></h2>
+
+  <button id="btn" onClick="cheight()">Calculate</button>
+  <!-- The calculate button when you click it it runs a function of all of the variables and calculates the amount of calories. -->
+
+  <h2></h2>
+  <p id="result"></p>
+  <p id="info">Please enter height in inches [in] and weight in pounds [lb]</p>
+  <!-- Units in what you are supposed to enter things in.-->
+</div>

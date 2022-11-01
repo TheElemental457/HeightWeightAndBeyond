@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Unborn Child Height Calculator </title>
+</head>
+<a href="/index.html" class="home">
+  <script src="heightCalculator(imperial).js"></script>
+  <link rel="stylesheet" href="heightCalculator(imperial).css">
+  <!-- Links to the other files of the calculator -->
+  <img id="home" src="/images/home.png" alt="" />
+
+</a>
+<div id="box1">
+  <h2>How to use the calculator</h2>
+  <p class="text2">Simply click on the measuring system you use (imperial or metric) and enter your height and your
+    spouse’s height to see how tall your children can be!</p>
+</div>
+<div id="box2">
+  <h2>How the calculator works</h2>
+  <p class="text2">This calculator works by taking the mom’s height and the dad’s height. If you are using the metric
+    system, behind the scenes it converts weight and height into imperial. Then it finds the average of the heights and
+    adds 2.5 or subtracts 2.5 depending on if the child is a boy or girl. So, the formula goes as follows. Boy: (Mom’s
+    height + Dad’s height)/2+2.5. Girl: (Mom’s height + Dad's height)/2-2.5. (Note that this calculator uses a quite
+    simple formula, and you can expect a difference of 4 inches or 10.15 centimeters).</p>
+</div>
+<!-- The boxes of extra info about the calculator -->
+
+
+
+
+
+<div>
+  <h2>Unborn Child Height Calculator (Imperial)</h2>
+  <a href="/unbornChildHeightCalculator/metric/heightCalculator(metric).html">Metric</a>
+  <!-- The metric switch for the calculator -->
+
+  <p class="text">Mother's Height [in]</p>
+  <input type="text" id="height">
+  <p class="text">Father's Height [in]</p>
+  <input type="text" id="weight">
+  <!-- All of the different inputs for variables -->
+  <h2></h2>
+  <button id="btn" onClick="cheight()">Calculate</button>
+  <!-- A button where whenever you click on it it runs a function in the javascript. -->
+  <h2></h2>
+
+  <p id="result"></p>
+  <p id="result2" </p>
+
+  <h2></h2>
+  <p id="info">Please enter height in inches [in]</p>
+  <!-- Info about what you have to enter into the calculator -->

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calories Burned Calculator</title>
+  <script src="caloriesBurnedCalculator(metric).js"></script>
+
+</head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Calories Burned Calculator</title>
+  <link rel="stylesheet" href="caloriesBurnedCalculator(metric).css" />=
+  <script src="caloriesBurnedCalculator(imperial).js"></script>
+  <!-- Links to the other files of the calculator -->
+</head>
+
+<body>
+  <a href="/index.html" class="home">
+    <img id="home" src="/images/home.png" alt="" />
+  </a>
+  <div id="box1">
+    <h2>How to use the calculator</h2>
+    <p class="text2">Simply click on the measuring system you use (imperial or metric), and enter your weight, height,
+      age, gender, activity level, and target weight loss/gain. Now you can see how many calories you should consume a
+      day!</p>
+  </div>
+  <div id="box2">
+    <h2>How the calculator works</h2>
+    <p class="text2">This calculator works by taking in your weight, duration, and intensity level based on MET values
+      of activities. If you are using the imperial system, behind the scenes its converts weight into metric. Then it
+      uses the following formula: duration*intensity*3.5*weight/200.</p>
+  </div>
+  <!-- The boxes of extra info about the calculator -->
+
+
+  <div>
+    <h2>Calories Burned Calculator (Metric)</h2>
+    <a href="/caloriesBurnedCalculator/imperial/caloriesBurnedCalculator(imperial).html">Imperial</a>
+    <!-- The metric switch for the calculator -->
+    <br>
+    <p class="text">Duration [min]</p>
+    <input type="text" id="Duration">
+    <p class="text">Weight [kg]</p>
+    <input type="text" id="Weight">
+    <p class="text">Intensity (MET)</p>
+    <input type="text" id="Intensity">
+    <!-- All of the different inputs for variables -->
+
+
+    <p id="result"></p>
+    <button id="btn" onClick="caloriesBurned()">Calculate</button>
+    <!-- A button where whenever you click on it it runs a function in the javascript. -->
+
+
+    <p id="info">Please enter duration in minutes [min], and weight in kilograms [kg]</p>
+    <!-- Info about what you have to enter into the calculator -->
+    <a href="/caloriesBurnedCalculator/table.html">MET values of every activity</a>
+    <!-- This is for people who dont know what the met values of the activities are so we included a helpful chart for them! -->
+  </div>
+</body>
+
+</html>

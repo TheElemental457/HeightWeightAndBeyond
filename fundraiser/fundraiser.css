@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.top{
+  width: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top h2{
+  font-size: 2.5rem;
+}
+
+.top p{
+  color: rgb(161, 161, 161);
+}
+
+.card{
+  width: 800px;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: 1000px;
+}
+#donations{
+  width: 600px;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: 860px;
+}
+.card1{
+  width: 500px;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: 600px;
+}
+
+.back{
+  width: 150px;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-left: -121px
+}
+.card:hover{
+  background-color: rgb(220, 220, 220);
+}
+
+.flex-container{
+  display: flex;
+  gap: 1rem;
+}
+
+.profile{
+  width:80px;
+  height:80px;
+}
+.profile1{
+   width: 200px;
+  height: 40px;
+}
+
+.flex-container p {
+  color: rgb(161, 161, 161);
+}
+
+.text{
+  margin-top: 70px;
+  font-size: 20px;
+  margin: 0.6rem 0;
+  
+}
+.text2{
+  font-size: 18px;
+  margin: 0.6rem 0;
+}
+
+
+.icon{
+  background-color: rgb(220, 220, 220);
+  display: grid;
+  width: 30px;
+  height: 30px;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  place-items: center;
+  color: #fff;
+}
+
+.socials{
+  display: flex;
+  gap: 0.5rem;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Adult Height Calculator (Metric)</title>
+  <script src="khamisRoche(metric).js "></script>
+  <link rel="stylesheet" href="khamisRoche(metric).css">
+  <!-- Links to the other files of the calculator -->
+</head>
+<a href="/index.html" class="home">
+  <img id="home" src="/images/home.png" alt="" />
+</a>
+<div id="box1">
+  <h2>How to use the calculator</h2>
+  <p class="text2">Simply click on the measuring system you use (imperial or metric), and enter your weight, height,
+    age, mother’s height, and father’s height. You can now see your future height estimates and how to increase your
+    height as a child!</p>
+</div>
+<div id="box2">
+  <h2>How the calculator works</h2>
+  <p class="text3">This calculator uses data tables made by Dr. Alex Roche and Henry Khamis to predict childhood height
+    for people from ages 4-17.5. It takes in your weight, height, gender, mom’s height, and dad’s height. If you are
+    using the metric system, behind the scenes it converts weight and height into imperial. The data tables are found
+    using the gender and age. It gets an array of coefficients from table used with the following formula: (coefficient
+    [0] * weight) + (coefficient [1] * height) + (coefficient [2] * ((mom’s height/2) + (dad’s height/2))) +
+    (coefficient [3]). (Note that this calculator works best on Caucasian origin children and has a margin of around 1.5
+    inches or 3.8 centimeters).</p>
+</div>
+<!-- The boxes of extra info about the calculator -->
+<div>
+  <h2>Adult Height Calculator (Metric)</h2>
+  <a href="/khamisRocheCalculator/imperial/khamisRoche(imperial).html">Imperial</a>
+  <!-- The metric switch for the calculator -->
+
+  <p class="text">Child's age</p>
+  <input type="text" id="age">
+  <p class="text">Child's gender at birth</p>
+  <input type="radio" name="gender" id="male" value="male">Male
+  <input type="radio" name="gender" id="female" value="female">Female
+  <p class="text">Child's Height [cm]</p>
+  <input type="text" id="height">
+  <p class="text">Child's Weight [kg]</p>
+  <input type="text" id="weight">
+  <p class="text">Mother's Height [cm]</p>
+  <input type="text" id="motherHeight">
+  <p class="text">Father's Height [cm]</p>
+  <input type="text" id="fatherHeight">
+  <!-- All of the different inputs for variables -->
+
+
+
+
+  <h2></h2>
+  <button id="btn" onclick="childHeight()">Calculate</button>
+  <!-- A button where whenever you click on it it runs a function in the javascript. -->
+  <h2></h2>
+
+  <p id="result"></p>
+
+
+
+  <h2></h2>
+  <p id="info">Please enter height in centimeters [cm], and weight in kilograms [kg]</p>
+</div>
+</body>
+
+</html>

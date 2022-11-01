@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="bmiCalculator(imperial).css" />
+<script src="bmiCalculator(imperial).js"></script>
+<!-- Links to the other files of the calculator -->
+
+<head>
+  <meta charset="utf-8" />
+  <title>BMI Calculator</title>
+</head>
+
+<a href="/index.html" class="home">
+  <img id="home" src="/images/home.png" alt="" />
+</a>
+<div id="box1">
+  <h2>How to use the calculator</h2>
+  <p class="text2">Simply click on the measuring system you use (imperial or metric) and enter in your weight and
+    height. Finally, get your BMI, BMI status, and advice for it!</p>
+</div>
+<div id="box2">
+  <h2>How the calculator works</h2>
+  <p class="text2">
+    This calculator works by taking in your weight and height. Then it applies the formula (weight(kg)/(height(cm)^2))
+    for metric and (703*weight(lb.)/(height(in)^2)) for imperial. Then it classifies the BMI into 4 categories
+    (Underweight, Healthy, Overweight, and Obese). Underweight is a BMI under 18.5. Healthy is a BMI from 18.5-24.9.
+    Overweight is considered a BMI from 25-29.9. Obese is a BMI over 30.
+  </p>
+</div>
+<!-- The boxes of extra info about the calculator -->
+<div>
+  <h2>BMI Calculator (Imperial)</h2>
+  <a href="/bmiCalculator/metric/bmiCalculator(metric).html">Metric</a>
+  <!-- The metric switch for the calculator -->
+  <p class="text">Height [in]</p>
+  <input type="text" id="height" />
+  <p class="text">Weight [lb]</p>
+  <input type="text" id="weight" />
+  <!-- All of the different inputs for variables -->
+  <p id="result"></p>
+  <p id="result2"></p>
+  <button id="btn" onClick="BMI()">Calculate</button>
+  <!-- A button where whenever you click on it it runs a function in the javascript. -->
+  <p id="result"></p>
+
+  <p id="info">Please enter height in inches [in], and weight in pounds [lb]</p>
+  <!-- Info about what you have to enter into the calculator -->
+</div>
+
+</html>
+
+</html>
